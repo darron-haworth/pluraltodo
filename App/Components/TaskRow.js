@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
   Text,
+  View,
 } from 'react-native';
 
 const styles = require('../Styles/taskrow');
@@ -8,7 +9,9 @@ const styles = require('../Styles/taskrow');
 class TaskRow extends Component {
     render() {
         return (
-            <Text>{this.props.todo.task}</Text>
+            <View style={styles.container} >
+                 <Text style={styles.label}>{this.props.todo.task}</Text>
+            </View>
             );
     }
 }

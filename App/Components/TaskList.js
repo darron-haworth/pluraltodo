@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {
   ListView,
+  View,
 } from 'react-native';
 
+const styles = require('../Styles/tasklist');
 
 import TaskRow from './TaskRow';
 
@@ -26,10 +28,12 @@ class TaskList extends Component {
 
     render() {
         return (
-                 <ListView
-                     dataSource={this.state.dataSource}
-                     renderRow={this.renderRow}
-                 />
+                <View style={styles.container} >
+                    <ListView
+                        dataSource={this.state.dataSource}
+                        renderRow={this.renderRow}
+                    />
+                 </View>
         );
     }
 }
