@@ -3,10 +3,13 @@ import {
   Text,
 } from 'react-native';
 
+const styles = require('../Styles/taskrow');
 
 class TaskRow extends Component {
     render() {
-        return (<Text>{this.props.todo.task}</Text>);
+        return (
+            <Text>{this.props.todo.task}</Text>
+            );
     }
 }
 

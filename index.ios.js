@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  View,
 } from 'react-native';
 
 
 import TaskList from './App/Components/TaskList';
 
+const styles = require('./App/Styles/main');
 
 class pluraltodo extends Component {
   constructor(props, context) {
@@ -24,7 +26,9 @@ class pluraltodo extends Component {
   }
   render() {
       return (
-          <TaskList todos={this.state.todos} />
+          <View style={styles.container}>
+              <TaskList todos={this.state.todos} />
+          </View>
     );
   }
 }
