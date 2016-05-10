@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
-  View
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -29,7 +27,7 @@ import TaskList from './App/Components/TaskList';
 
 class pluraltodo extends Component {
   render() {
-    return (
+      return (
       <TaskList />
     );
   }
