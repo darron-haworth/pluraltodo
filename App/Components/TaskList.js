@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
   ListView,
-  View,
 } from 'react-native';
 
 
-const styles = StyleSheet.create({
-    container: {
-        paddingTop: 40,
-    },
-});
+import TaskRow from './TaskRow';
 
 class TaskList extends Component {
     constructor(props, context) {
@@ -26,7 +19,9 @@ class TaskList extends Component {
     }
 
     renderRow(todo) {
-        return (<Text>{todo.task}</Text>);
+        return (
+            <TaskRow todo={todo} />
+        );
     }
 
     render() {
@@ -34,7 +29,6 @@ class TaskList extends Component {
                  <ListView
                      dataSource={this.state.dataSource}
                      renderRow={this.renderRow}
-                     style={styles.container}
                  />
         );
     }
