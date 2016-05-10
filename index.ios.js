@@ -1,34 +1,30 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
 } from 'react-native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 import TaskList from './App/Components/TaskList';
 
+
 class pluraltodo extends Component {
+  constructor(props, context) {
+      super(props, context);
+
+      this.state = {
+          todos: [
+              {
+                  task: 'Learn React Native 1',
+              },
+              {
+                  task: 'Learn React Native 2',
+              },
+          ],
+      };
+  }
   render() {
       return (
-      <TaskList />
+          <TaskList todos={this.state.todos} />
     );
   }
 }
