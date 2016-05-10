@@ -17,7 +17,7 @@ class TaskList extends Component {
     render() {
         return (
             <View style={styles.container}>
-                 <Text>This is a task list</Text>
+                 <Text>This is a task list item</Text>
             </View>
         );
     }
