@@ -1,0 +1,13 @@
++#
+ +# 
+ +#
+ +# Examples
+ +# +files/**/*
+ +# +libraries/**/*
+ +# +modules/contrib/**/*
+ +# +modules/features/**/*
+ +# +themes/contrib/**/*
+ +# Save this file as /path/to/drupalroot/.eslintignore
+ +#
+ 
++files/*.md

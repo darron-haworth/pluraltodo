@@ -6,16 +6,6 @@ import {
   View
 } from 'react-native';
 
-import TaskList from './TaskList';
-
-class pluraltodo extends Component {
-  render() {
-    return (
-      <TaskList />
-    );
-  }
-}
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -34,5 +24,15 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+import TaskList from './App/Components/TaskList';
+
+class pluraltodo extends Component {
+  render() {
+    return (
+      <TaskList />
+    );
+  }
+}
 
 AppRegistry.registerComponent('pluraltodo', () => pluraltodo);
