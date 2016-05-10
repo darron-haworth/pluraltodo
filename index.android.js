@@ -23,10 +23,17 @@ class pluraltodo extends Component {
           ],
       };
   }
+
+  onAddStarted() {
+      console.log('on add started');
+  }
   render() {
       return (
           <View style={styles.container}>
-              <TaskList todos={this.state.todos} />
+              <TaskList
+                  onAddStarted={this.onAddStarted.bind(this)}
+                  todos={this.state.todos}
+              />
           </View>
     );
   }

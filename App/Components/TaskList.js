@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {
   ListView,
+  Text,
+  TouchableHighlight,
   View,
 } from 'react-native';
 
@@ -33,12 +35,21 @@ class TaskList extends Component {
                         dataSource={this.state.dataSource}
                         renderRow={this.renderRow}
                     />
+
+                  <TouchableHighlight
+                      onPress={this.props.onAddStarted}
+                      style={styles.button}
+                  >
+                        <Text style={styles.buttonText}>Add Task</Text>
+                  </TouchableHighlight>
+
                  </View>
         );
     }
 }
 
 TaskList.propTypes = {
+    onAddStarted: React.PropTypes.func.isRequired,
     todos: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
 };
 
