@@ -1,6 +1,6 @@
 # Pluralsight Todo course
 #####Learning React Native
-##### https://app.pluralsight.com/library/courses/build-react-native-exponent-redux-apps
+##### [Take the course: Build Cross Platform React Native Apps with Exponent and Redux](https://app.pluralsight.com/library/courses/build-react-native-exponent-redux-apps}
 
 Here is what we are shooting for: (from the course intro page)
 
