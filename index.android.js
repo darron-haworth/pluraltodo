@@ -8,6 +8,7 @@ import {
 
 
 import TaskList from './App/Components/TaskList';
+import TaskForm from './App/Components/TaskForm';
 
 const styles = require('./App/Styles/main');
 
@@ -38,7 +39,7 @@ class pluraltodo extends Component {
       case 'taskform':
           return (
               <View style={styles.container}>
-                    <Text>Add form comes here</Text>
+                    <TaskForm />
               </View>
           );
       default:
@@ -56,6 +57,7 @@ class pluraltodo extends Component {
   configureScene() {
       return Navigator.SceneConfigs.FloatFromBottom;
   }
+
 
   render() {
       return (
