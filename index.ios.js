@@ -36,7 +36,7 @@ class pluraltodo extends Component {
   onCancel() {
       this.nav.pop();
   }
-  onAdd() {
+  onAdd(task) {
       this.nav.pop();
   }
 
