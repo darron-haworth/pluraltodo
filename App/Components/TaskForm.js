@@ -26,6 +26,7 @@ class TaskForm extends Component {
                  />
 
                  <TouchableHighlight
+                     onPress={this.props.onAdd}
                      style={styles.button}
                  >
                        <Text style={styles.buttonText}>
@@ -34,6 +35,7 @@ class TaskForm extends Component {
                 </TouchableHighlight>
 
                  <TouchableHighlight
+                     onPress={this.props.onCancel}
                      style={[styles.button, styles.cancelButton]}
                  >
                        <Text style={styles.buttonText}>
@@ -45,5 +47,10 @@ class TaskForm extends Component {
             );
     }
 }
+
+TaskForm.propTypes = {
+    onAdd: React.PropTypes.func.isRequired,
+    onCancel: React.PropTypes.func.isRequired,
+};
 
 export default TaskForm;

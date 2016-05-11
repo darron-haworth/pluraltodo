@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   Navigator,
-  Text,
   View,
 } from 'react-native';
 
@@ -34,12 +33,23 @@ class pluraltodo extends Component {
       });
   }
 
+  onCancel() {
+      this.nav.pop();
+  }
+
+  onAdd() {
+      this.nav.pop();
+  }
+
   renderScene(route, nav) {
       switch (route.name) {
       case 'taskform':
           return (
               <View style={styles.container}>
-                    <TaskForm />
+                    <TaskForm
+                        onAdd={this.onAdd.bind(this)}
+                        onCancel={this.onCancel.bind(this)}
+                    />
               </View>
           );
       default:
