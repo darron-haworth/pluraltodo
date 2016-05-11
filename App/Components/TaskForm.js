@@ -13,15 +13,21 @@ const styles = require('../Styles/taskform');
 class TaskForm extends Component {
     constructor(props, context) {
         super(props, context);
-
-        this.state = {
-            task: '',
-        };
     }
+
+    onChange(text) {
+        this.task = text;
+    }
+
+    onAddPressed() {
+        this.props.onAdd(this.task);
+    }
+
     render() {
         return (
             <View style={styles.container} >
                  <TextInput
+                     onChangeText={this.onChange.bind(this)}
                      style={styles.input}
                  />
 
