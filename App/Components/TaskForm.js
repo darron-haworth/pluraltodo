@@ -6,6 +6,8 @@ import {
   View,
 } from 'react-native';
 
+const KeyboardSpacer = require('react-native-keyboard-spacer');
+
 const styles = require('../Styles/taskform');
 
 class TaskForm extends Component {
@@ -38,6 +40,7 @@ class TaskForm extends Component {
                             Cancel
                        </Text>
                 </TouchableHighlight>
+            <KeyboardSpacer/>
             </View>
             );
     }
