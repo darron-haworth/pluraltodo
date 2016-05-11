@@ -5,3 +5,9 @@
 Here is the UI for the finished todo project. (from the course intro page)
 
 ![Here](https://github.com/darron-haworth/pluraltodo/blob/master/App/images/project.png)
+
+
+---
+####   ReadMe CheetSheet
+
+[Readme.md Markdown CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
