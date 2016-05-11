@@ -1,4 +1,4 @@
-# Pluralsight Todo course
+# React Native Todo App, IOS / Android
 #####Learning React Native
 ##### Take the course: [Build Cross Platform React Native Apps with Exponent and Redux](https://app.pluralsight.com/library/courses/build-react-native-exponent-redux-apps)
 
