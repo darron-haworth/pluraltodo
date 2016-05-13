@@ -37,6 +37,8 @@ class pluraltodo extends Component {
       this.nav.pop();
   }
   onAdd(task) {
+      this.state.todos.push({ task });
+      this.setState({ todos: this.state.todos });
       this.nav.pop();
   }
 

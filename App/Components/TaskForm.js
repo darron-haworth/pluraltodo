@@ -32,7 +32,7 @@ class TaskForm extends Component {
                  />
 
                  <TouchableHighlight
-                     onPress={this.props.onAdd}
+                     onPress={this.onAddPressed.bind(this)}
                      style={styles.button}
                  >
                        <Text style={styles.buttonText}>
